@@ -125,15 +125,15 @@ label= "NAV";
                 };
 
 				
-//	            mos_layer {
-//label= "MOS";
-// bindings = <
-//                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
-//                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
-//	&none		&none			&none			&none			&none			&none			&none			&none			&none			&none			&none			&none      
-//												&trans			&trans			&trans			&trans			&trans			&trans      
-//                        >;
-//                };
+	            mos_layer {
+label= "MOS";
+ bindings = <
+                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
+                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
+	&none		&none			&none			&none			&none			&none			&none			&none			&none			&none			&none			&none      
+												&trans			&trans			&trans			&trans			&trans			&trans      
+                        >;
+                };
 
 
 //	            col_layer {
