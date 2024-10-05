@@ -92,15 +92,15 @@ label= "BASE"                              ;
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
-//                sym_layer {
-//label= "SYM";
-// bindings = <
-//                &kp TILDE		&kp AMPERSAND	&kp ASTERISK	&kp EQUAL		&kp LPAR		&kp RPAR		&kp PLUS		&kp APOS		&trans			&trans
-//                &kp GRAVE		&kp DOLLAR		&kp PERCENT		&kp CARET		&kp LBRC		&kp RBRC		&kp PIPE		&kp DQT 		&trans			&trans
-//	&trans		&kp BACKSLASH	&kp EXCL		&kp AT			&kp HASH		&kp LBKT		&kp RBKT		&kp MINUS		&kp UNDERSCORE	&trans			&trans			&trans      
-//												&trans			&trans			&trans			&trans			&to COL 		&trans      
-//                        >;
-//                };
+                sym_layer {
+label= "SYM";
+ bindings = <
+                &kp TILDE		&kp AMPERSAND	&kp ASTERISK	&kp EQUAL		&kp LPAR		&kp RPAR		&kp PLUS		&kp APOS		&trans			&trans
+                &kp GRAVE		&kp DOLLAR		&kp PERCENT		&kp CARET		&kp LBRC		&kp RBRC		&kp PIPE		&kp DQT 		&trans			&trans
+	&trans		&kp BACKSLASH	&kp EXCL		&kp AT			&kp HASH		&kp LBKT		&kp RBKT		&kp MINUS		&kp UNDERSCORE	&trans			&trans			&trans      
+												&trans			&trans			&trans			&trans			&to COL 		&trans      
+                        >;
+                };
 
 
                 num_layer {
