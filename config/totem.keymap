@@ -114,15 +114,15 @@ label= "NUM";
                 };
 
 				
-//	            nav_layer {
-//label= "NAV";
-// bindings = <
-//                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
-//                &mt LGUI LEFT	&mt LALT UP		&mt LCTRL DOWN	&mt LSHFT RIGHT &kp LG(LS(S))	&kp CAPS		&mt RSHFT LEFT	&mt RCTRL UP	&mt RALT DOWN	&mt RGUI RIGHT
-//	&none		&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&kp PSCRN		&kp INS			&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&none      
-//												&trans			&trans			&trans			&trans			&trans			&trans      
-//                        >;
-//                };
+	            nav_layer {
+label= "NAV";
+ bindings = <
+                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
+                &mt LGUI LEFT	&mt LALT UP		&mt LCTRL DOWN	&mt LSHFT RIGHT &kp LG(LS(S))	&kp CAPS		&mt RSHFT LEFT	&mt RCTRL UP	&mt RALT DOWN	&mt RGUI RIGHT
+	&none		&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&kp PSCRN		&kp INS			&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&none      
+												&trans			&trans			&trans			&trans			&trans			&trans      
+                        >;
+                };
 
 				
 //	            mos_layer {
