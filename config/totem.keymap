@@ -18,10 +18,13 @@
 
 #define BASE 0
 #define NAV  1
-#define SYM  2
-#define ADJ  3
-#define TVP1 4
-#define TVP2 5
+#define NUM  2
+#define SYM  3
+#define MOS  4
+#define COL  5
+//#define ADJ  3
+//#define TVP1 4
+//#define TVP2 5
 
 &mt {
   quick-tap-ms = <100>;
@@ -78,7 +81,6 @@ label= "BASE"                              ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-
 				&kp Q			&kp W			&kp E			&kp R			&kp T           &kp Y       	&kp U       	&kp I       	&kp O       	&kp P
 				&mt LGUI A		&mt LALT S		&mt LCTRL D		&mt LSHFT F		&kp G           &kp H       	&mt RSHFT J 	&mt RCTRL K 	&mt RALT L  	&mt RGUI SEMI
 	&kp ESC		&kp Z			&kp X			&kp C			&kp V			&kp B           &kp N       	&kp M       	&kp COMMA   	&kp DOT     	&kp FSLH		&kp BSLH
