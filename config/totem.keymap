@@ -15,7 +15,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-//#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
 #define SYM  1
@@ -129,11 +129,11 @@ label= "NAV";
 	            msc_layer {
 label= "MSC";
  bindings = <
-				&kp BT_SEL 0	&kp BT_SEL 1	&kp	BT_SEL 2	&none			&none			&kp C_BRI_UP	&kp C_PLAY		&kp C_PP		&kp C_PREV		&kp C_NEXT
-				&kp BT_PRV		&kp BT_NXT		&none			&none			&none			&kp C_BRI_DN	&none			&none			&none			&none
-	&kp BT_CLR	&none			&none			&none			&none			&none			&none			&kp C_VOL_DN	&kp C_VOL_UP	&kp C_MUTE		&none			&kp BT_CLR_ALL      
-//												&trans			&trans			&trans			&kp MB1			&kp MB2			&kp MB3      
-												&trans			&trans			&trans			&trans			&trans			&trans      
+				&bt BT_SEL 0	&bt BT_SEL 1	&bt	BT_SEL 2	&bt	BT_SEL 3	&bt	BT_SEL 4	&kp C_BRI_UP	&kp C_PLAY		&kp C_PP		&kp C_PREV		&kp C_NEXT
+				&bt BT_PRV		&bt BT_NXT		&none			&none			&none			&kp C_BRI_DN	&none			&none			&none			&none
+	&bt BT_CLR	&none			&none			&none			&none			&none			&none			&kp C_VOL_DN	&kp C_VOL_UP	&kp C_MUTE		&none			&bt BT_CLR_ALL  
+												&trans			&trans			&trans			&mkp MB1			&mkp MB2			&mkp MB3      
+//												&trans			&trans			&trans			&trans			&trans			&trans      
                         >;
                 };
 
