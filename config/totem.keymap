@@ -84,69 +84,68 @@ label= "BASE"                              ;
 				&kp Q			&kp W			&kp E			&kp R			&kp T           &kp Y       	&kp U       	&kp I       	&kp O       	&kp P
 				&mt LGUI A		&mt LALT S		&mt LCTRL D		&mt LSHFT F		&kp G           &kp H       	&mt RSHFT J 	&mt RCTRL K 	&mt RALT L  	&mt RGUI SEMI
 	&kp ESC		&kp Z			&kp X			&kp C			&kp V			&kp B           &kp N       	&kp M       	&kp COMMA   	&kp DOT     	&kp FSLH		&kp BSLH
-												&kp ESC			&lt NAV SPACE	&lt MOS TAB		&lt SYM RET		&lt NUM BSPC	&kp DEL
+//												&kp ESC			&lt NAV SPACE	&lt MOS TAB		&lt SYM RET		&lt NUM BSPC	&kp DEL
+												&none			&none			&none			&none			&none			&none
                         >;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
-                sym_layer {
-label= "SYM";
- bindings = <
-                &kp TILDE		&kp AMPERSAND	&kp ASTERISK	&kp EQUAL		&kp LPAR		&kp RPAR		&kp PLUS		&kp APOS		&trans			&trans
-                &kp GRAVE		&kp DOLLAR		&kp PERCENT		&kp CARET		&kp LBRC		&kp RBRC		&kp PIPE		&kp DQT 		&trans			&trans
-	&trans		&kp BACKSLASH	&kp EXCL		&kp AT			&kp HASH		&kp LBKT		&kp RBKT		&kp MINUS		&kp UNDERSCORE	&trans			&trans			&trans      
-												&trans			&trans			&trans			&trans			&to COL 		&trans      
-                        >;
-                };
+//                sym_layer {
+//label= "SYM";
+// bindings = <
+//                &kp TILDE		&kp AMPERSAND	&kp ASTERISK	&kp EQUAL		&kp LPAR		&kp RPAR		&kp PLUS		&kp APOS		&trans			&trans
+//                &kp GRAVE		&kp DOLLAR		&kp PERCENT		&kp CARET		&kp LBRC		&kp RBRC		&kp PIPE		&kp DQT 		&trans			&trans
+//	&trans		&kp BACKSLASH	&kp EXCL		&kp AT			&kp HASH		&kp LBKT		&kp RBKT		&kp MINUS		&kp UNDERSCORE	&trans			&trans			&trans      
+//												&trans			&trans			&trans			&trans			&to COL 		&trans      
+//                        >;
+//                };
 
 
-                num_layer {
-label= "NUM";
- bindings = <
-                &none			&kp N7			&kp N8			&kp N9			&none			&none			&kp F7			&kp F8			&kp F9			&kp F10
-                &none			&kp N4			&kp N5			&kp N6			&none			&none			&kp F4			&kp F5			&kp F6			&kp F11
-	&none		&none			&kp N1			&kp N2			&kp N3			&none			&none			&kp F1			&kp F2			&kp F3			&kp F12			&none      
-												&trans			&kp N0			&trans			&trans			&trans			&trans      
-                        >;
-                };
-
-				
-	            nav_layer {
-label= "NAV";
- bindings = <
-                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
-                &mt LGUI LEFT	&mt LALT UP		&mt LCTRL DOWN	&mt LSHFT RIGHT &kp LG(LS(S))	&kp CAPS		&mt RSHFT LEFT	&mt RCTRL UP	&mt RALT DOWN	&mt RGUI RIGHT
-	&none		&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&kp PSCRN		&kp INS			&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&none      
-												&trans			&trans			&trans			&trans			&trans			&trans      
-                        >;
-                };
+//                num_layer {
+//label= "NUM";
+// bindings = <
+//                &none			&kp N7			&kp N8			&kp N9			&none			&none			&kp F7			&kp F8			&kp F9			&kp F10
+//                &none			&kp N4			&kp N5			&kp N6			&none			&none			&kp F4			&kp F5			&kp F6			&kp F11
+//	&none		&none			&kp N1			&kp N2			&kp N3			&none			&none			&kp F1			&kp F2			&kp F3			&kp F12			&none      
+//												&trans			&kp N0			&trans			&trans			&trans			&trans      
+//                        >;
+//                };
 
 				
-	            mos_layer {
-label= "MOS";
- bindings = <
-                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
-                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
-	&none		&none			&none			&none			&none			&none			&none			&none			&none			&none			&none			&none      
-												&trans			&trans			&trans			&trans			&trans			&trans      
-                        >;
-                };
-
-	            col_layer {
-label= "COL";
- bindings = <
-                &kp Q			&kp W			&kp F			&kp P			&kp B			&kp J			&kp L			&kp U			&kp Y			&kp 
-                &mt LGUI A 		&mt LALT R 		&mt LCTRL S 	&mt LSHFT T 	&kp G			&kp M			&mt RSHFT N		&mt RCTRL E		&mt RALT I		&mt RGUI O
-	&none		&kp Z			&kp X			&kp C			&kp D			&kp V			&kp K			&kp H			&kp COMMA		&kp DOT			&kp FSLH		&none      
-												&trans 			&trans 			&trans 			&trans 			&trans 			&to BASE      
-                        >;
-                };	
-
-
+//	            nav_layer {
+//label= "NAV";
+// bindings = <
+//                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
+//                &mt LGUI LEFT	&mt LALT UP		&mt LCTRL DOWN	&mt LSHFT RIGHT &kp LG(LS(S))	&kp CAPS		&mt RSHFT LEFT	&mt RCTRL UP	&mt RALT DOWN	&mt RGUI RIGHT
+//	&none		&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&kp PSCRN		&kp INS			&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&none      
+//												&trans			&trans			&trans			&trans			&trans			&trans      
+//                        >;
+//                };
 
 				
+//	            mos_layer {
+//label= "MOS";
+// bindings = <
+//                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
+//                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
+//	&none		&none			&none			&none			&none			&none			&none			&none			&none			&none			&none			&none      
+//												&trans			&trans			&trans			&trans			&trans			&trans      
+//                        >;
+//                };
+
+
+//	            col_layer {
+//label= "COL";
+// bindings = <
+//                &kp Q			&kp W			&kp F			&kp P			&kp B			&kp J			&kp L			&kp U			&kp Y			&kp 
+//                &mt LGUI A 		&mt LALT R 		&mt LCTRL S 	&mt LSHFT T 	&kp G			&kp M			&mt RSHFT N		&mt RCTRL E		&mt RALT I		&mt RGUI O
+//	&none		&kp Z			&kp X			&kp C			&kp D			&kp V			&kp K			&kp H			&kp COMMA		&kp DOT			&kp FSLH		&none      
+//												&trans 			&trans 			&trans 			&trans 			&trans 			&to BASE      
+//                        >;
+//                };	
+			
 
 //                nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
