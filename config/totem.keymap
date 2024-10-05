@@ -15,12 +15,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
 #define SYM  1
 #define NUM  2
 #define NAV  3
-#define MOS  4
+#define MSC  4
 #define COL  5
 // #define ADJ  3
 // #define TVP1 4
@@ -84,7 +85,7 @@ label= "BASE"                              ;
 				&kp Q			&kp W			&kp E			&kp R			&kp T           &kp Y       	&kp U       	&kp I       	&kp O       	&kp P
 				&mt LGUI A		&mt LALT S		&mt LCTRL D		&mt LSHFT F		&kp G           &kp H       	&mt RSHFT J 	&mt RCTRL K 	&mt RALT L  	&mt RGUI SEMI
 	&kp ESC		&kp Z			&kp X			&kp C			&kp V			&kp B           &kp N       	&kp M       	&kp COMMA   	&kp DOT     	&kp FSLH		&kp BSLH
-												&kp ESC			&lt NAV SPACE	&lt MOS TAB		&lt SYM RET		&lt NUM BSPC	&kp DEL
+												&kp ESC			&lt NAV SPACE	&lt MSC TAB		&lt SYM RET		&lt NUM BSPC	&kp DEL
 //												&none			&none			&none			&none			&none			&none
                         >;
                 };
@@ -125,13 +126,13 @@ label= "NAV";
                 };
 
 				
-	            mos_layer {
-label= "MOS";
+	            msc_layer {
+label= "MSC";
  bindings = <
-                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
-                &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
-	&none		&none			&none			&none			&none			&none			&none			&none			&none			&none			&none			&none      
-												&trans			&trans			&trans			&trans			&trans			&trans      
+				&kp BT_SEL 0	&kp BT_SEL 1	&kp	BT_SEL 2	&kp BT_SEL 		&kp	BT_SEL		&kp C_BRI_UP	&kp C_PLAY		&kp C_PP		&kp C_PREV		&kp C_NEXT
+				&kp BT_PRV		&kp BT_NXT		&none			&none			&none			&kp C_BRI_DN	&none			&none			&none			&none
+	&kp BT_CLR	&none			&none			&none			&none			&none			&none			&kp C_VOL_DN	&kp C_VOL_UP	&kp C_MUTE		&none			&kp BT_CLR_ALL      
+												&trans			&trans			&trans			&kp MB1			&kp MB2			&kp MB3      
                         >;
                 };
 
