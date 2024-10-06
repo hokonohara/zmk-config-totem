@@ -51,37 +51,37 @@
 			combo_del {
 				timeout-ms = <50>;
 				key-positions = <8 9>;
-				bindings = <&kp DEL>
+				bindings = <&kp DEL>;
 			};
 			combo_lpar {
 				timeout-ms = <50>;
 				key-positions = <3 4>;
-				bindings = <&kp LPAR>
+				bindings = <&kp LPAR>;
 			};
 			combo_rpar {
 				timeout-ms = <50>;
 				key-positions = <5 6>;
-				bindings = <&kp RPAR>
+				bindings = <&kp RPAR>;
 			};
 			combo_lbrc {
 				timeout-ms = <50>;
 				key-positions = <13 14>;
-				bindings = <&kp LBRC>
+				bindings = <&kp LBRC>;
 			};
 			combo_rbrc {
 				timeout-ms = <50>;
 				key-positions = <15 16>;
-				bindings = <&kp RBRC>
+				bindings = <&kp RBRC>;
 			};
 			combo_lbkt {
 				timeout-ms = <50>;
 				key-positions = <24 25>;
-				bindings = <&kp LBKT>
+				bindings = <&kp LBKT>;
 			};
 			combo_rbkt {
 				timeout-ms = <50>;
 				key-positions = <26 27>;
-				bindings = <&kp RBKT>
+				bindings = <&kp RBKT>;
 			};
 //            combo_tvp {
 //                timeout-ms = <100>;
