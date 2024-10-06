@@ -34,6 +34,12 @@
   tapping-term-ms = <170>;
 };
 
+//		0	1	2	3	4		5	6	7	8	9
+//		10	11	12	13	14		15	16	17	18	19
+//	20	21	22	23	24	25		26	27	28	29	30	31
+//				32	33	34		35	36	37
+
+
 / {
      combos {
             compatible = "zmk,combos";
@@ -42,6 +48,41 @@
                 key-positions = <0 1>;
                 bindings = <&kp ESC>;
             };
+			combo_del {
+				timeout-ms = <50>;
+				key-positions = <8 9>;
+				bindings = <&kp DEL>
+			};
+			combo_lpar {
+				timeout-ms = <50>;
+				key-positions = <3 4>;
+				bindings = <&kp LPAR>
+			};
+			combo_rpar {
+				timeout-ms = <50>;
+				key-positions = <5 6>;
+				bindings = <&kp RPAR>
+			};
+			combo_lbrc {
+				timeout-ms = <50>;
+				key-positions = <13 14>;
+				bindings = <&kp LBRC>
+			};
+			combo_rbrc {
+				timeout-ms = <50>;
+				key-positions = <15 16>;
+				bindings = <&kp RBRC>
+			};
+			combo_lbkt {
+				timeout-ms = <50>;
+				key-positions = <24 25>;
+				bindings = <&kp LBKT>
+			};
+			combo_rbkt {
+				timeout-ms = <50>;
+				key-positions = <26 27>;
+				bindings = <&kp RBKT>
+			};
 //            combo_tvp {
 //                timeout-ms = <100>;
 //                key-positions = <11 12 13>;
@@ -50,15 +91,15 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
+        paste_return: paste_return  {
+//            label = "giphy";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N2>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp G &kp I &kp F>
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp ENTER>
                 ;
         };
     };
@@ -69,7 +110,7 @@
 
                 base_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "BASE"                              ;
+//label= "BASE"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     Q     ┃     W     ┃     F     ┃     P     ┃     G     ┃   ┃     J     ┃     L     ┃     U     ┃     Y     ┃     ;     ┃
@@ -85,7 +126,7 @@ label= "BASE"                              ;
 				&kp Q			&kp W			&kp E			&kp R			&kp T           &kp Y       	&kp U       	&kp I       	&kp O       	&kp P
 				&mt LGUI A		&mt LALT S		&mt LCTRL D		&mt LSHFT F		&kp G           &kp H       	&mt RSHFT J 	&mt RCTRL K 	&mt RALT L  	&mt RGUI SEMI
 	&kp ESC		&kp Z			&kp X			&kp C			&kp V			&kp B           &kp N       	&kp M       	&kp COMMA   	&kp DOT     	&kp FSLH		&kp BSLH
-												&kp ESC			&lt NAV SPACE	&lt MSC TAB		&lt SYM RET		&lt NUM BSPC	&kp DEL
+												&kp ESC			&lt SYM SPACE	&lt NAV TAB		&lt MSC RET		&lt NUM BSPC	&kp DEL
 //												&none			&none			&none			&none			&none			&none
                         >;
                 };
@@ -94,7 +135,7 @@ label= "BASE"                              ;
 
 
                 sym_layer {
-label= "SYM";
+//label= "SYM";
  bindings = <
                 &kp TILDE		&kp AMPERSAND	&kp ASTERISK	&kp EQUAL		&kp LPAR		&kp RPAR		&kp PLUS		&kp APOS		&trans			&trans
                 &kp GRAVE		&kp DOLLAR		&kp PERCENT		&kp CARET		&kp LBRC		&kp RBRC		&kp PIPE		&kp DQT 		&trans			&trans
@@ -105,18 +146,18 @@ label= "SYM";
 
 
                 num_layer {
-label= "NUM";
+//label= "NUM";
  bindings = <
-                &none			&kp N7			&kp N8			&kp N9			&none			&none			&kp F7			&kp F8			&kp F9			&kp F10
-                &none			&kp N4			&kp N5			&kp N6			&none			&none			&kp F4			&kp F5			&kp F6			&kp F11
-	&none		&none			&kp N1			&kp N2			&kp N3			&none			&none			&kp F1			&kp F2			&kp F3			&kp F12			&none      
+                &none			&kp N7			&kp N8			&kp N9			&kp LC(C)		&none			&kp F7			&kp F8			&kp F9			&kp F10
+                &none			&kp N4			&kp N5			&kp N6			&kp LC(V)		&none			&kp F4			&kp F5			&kp F6			&kp F11
+	&none		&none			&kp N1			&kp N2			&kp N3			&paste_return	&none			&kp F1			&kp F2			&kp F3			&kp F12			&none      
 												&trans			&kp N0			&trans			&trans			&trans			&trans      
                         >;
                 };
 
 				
 	            nav_layer {
-label= "NAV";
+//label= "NAV";
  bindings = <
                 &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
                 &mt LGUI LEFT	&mt LALT UP		&mt LCTRL DOWN	&mt LSHFT RIGHT &kp LG(LS(S))	&kp CAPS		&mt RSHFT LEFT	&mt RCTRL UP	&mt RALT DOWN	&mt RGUI RIGHT
@@ -127,7 +168,7 @@ label= "NAV";
 
 				
 	            msc_layer {
-label= "MSC";
+//label= "MSC";
  bindings = <
 				&bt BT_SEL 0	&bt BT_SEL 1	&bt	BT_SEL 2	&bt	BT_SEL 3	&bt	BT_SEL 4	&kp C_BRI_UP	&kp C_PLAY		&kp C_PP		&kp C_PREV		&kp C_NEXT
 				&bt BT_PRV		&bt BT_NXT		&none			&none			&none			&kp C_BRI_DN	&none			&none			&none			&none
@@ -139,7 +180,7 @@ label= "MSC";
 
 
 	            col_layer {
-label= "COL";
+//label= "COL";
  bindings = <
                 &kp Q			&kp W			&kp F			&kp P			&kp B			&kp J			&kp L			&kp U			&kp Y			&kp SEMI
                 &mt LGUI A 		&mt LALT R 		&mt LCTRL S 	&mt LSHFT T 	&kp G			&kp M			&mt RSHFT N		&mt RCTRL E		&mt RALT I		&mt RGUI O
