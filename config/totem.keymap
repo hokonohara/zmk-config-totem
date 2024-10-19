@@ -84,6 +84,7 @@
 				key-positions = <27 28>;
 				bindings = <&kp RBKT>;
 			};
+			
 			combo_copy {
 				timeout-ms = <50>;
 				key-positions = <7 8>;
@@ -171,8 +172,8 @@
 //label= "NAV";
  bindings = <
                 &none			&none			&none			&none			&none			&none			&none			&none			&none			&none
-                &mt LGUI LEFT	&mt LALT UP		&mt LCTRL DOWN	&mt LSHFT RIGHT &kp LG(LS(S))	&kp CAPS		&mt RSHFT LEFT	&mt RCTRL UP	&mt RALT DOWN	&mt RGUI RIGHT
-	&none		&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&kp PSCRN		&kp INS			&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&none      
+                &mt LGUI LEFT	&mt LALT DOWN	&mt LCTRL UP	&mt LSHFT RIGHT &kp LG(LS(S))	&kp CAPS		&mt RSHFT LEFT	&mt RCTRL DOWN	&mt RALT UP	&mt RGUI RIGHT
+	&none		&kp HOME		&kp PG_UP		&kp PG_DN		&kp END			&kp PSCRN		&kp INS			&kp HOME		&kp PG_DN		&kp PG_UP		&kp END			&none      
 												&trans			&trans			&trans			&trans			&trans			&trans      
                         >;
                 };
